@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Dancing+Script|Pacifico&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Tailor</title>
+    <link rel="stylesheet" type="text/css" href="stylesc.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutb.html">About</a></li>
+            <li><a href="shop1.html">Shop</a></li>
+            <li><a href="contact1.html">Contact us</a></li>
+        </nav>
+        <div class="access">
+            <a href="#">Register</a>
+            <a href="#" class="in">Sign in</a>
+        </div>
+        <div class="title">
+            <h1>My Tailor</h1>
+        </div>
+    </header>
+
+  <div id="shop">
+
+    <section class="container">
+      <div id="choose cloth">
+        <h1>Our Shop</h1>
+        <ul>
+          <li class="big"><a href="#ready made cloth">Ready Made Cloth</a></li>
+          <li class="big"><a href="#tailored cloth">Tailored Cloth</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <section class="container">
+        <div id="ready made cloth">
+          <h2>Below are pictures of ready made clothes</h2>
+          <div class="images">
+            <div class="w3-content w3-section" style="width:-10%">
+              <img class="mySlides" src="./pics/bride-groom.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/casual-official.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/cool summer.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/cool summer.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/cool-gal.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/couple-swagg.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/events.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/fashion.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/fashion34.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/grey.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/jacket.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/jackets.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/jam-suit.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/jogging.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/kids-wear.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/kids-square.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/look.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/looky.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/men.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/mum-baby.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/my-choice.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/my-lady.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/office-suit.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/official-gal.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/official.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/old-school.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/slay.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/slay1.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/stunning.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/style.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/suit2.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/suit34.jpeg" height="900" width="auto">
+              <img class="mySlides" src="./pics/summer.jpeg" height="900" width="auto">
+            </div>
+            <script>
+              var myIndex = 0;
+              carousel();
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+              }
+            </script>
+          </div>
+      </section>
+    </section>
+    <section class="container">
+      <div id="tailored cloth">
+        <h1>Tailor ToolBox</h1>
+        <p id="bar">
+          <table style="width:100%">
+            <tr>
+              <th>Cloth Type</th>
+              <th>Actual Measurements</th>
+              <th>Final Sketch</th>
+
+            </tr>
+            <tr>
+              <td>
+                <p><em>Cloth Type</em></p>
+                <form action="/action_page.php">
+                  <select name="cloth_type">
+                    <option value="dress">Dress</option>
+                    <option value="shirt">Shirt</option>
+                    <option value="trouser">Trouser</option>
+                    <option value="suit">Suit</option>
+                    <option value="gown">Gown</option>
+                    <option value="wedding suit and dress">Wedding suit and dress</option>
+                    <option value="skirt">Skirt</option>
+                  </select>
+                </form>
+                <p><em>Material</em></p>
+                <form action="/action_page.php">
+                  <select name="material">
+                    <option value="synthetic">Synthetic</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="fibre">Fibre</option>
+                    <option value="wool">Wool</option>
+                    <option value="silk">Silk</option>
+                    <option value="leather">Leather</option>
+                    <option value="bast/linen">Bast/Linen</option>
+                  </select>
+                </form>
+                <p><em>Quantity</em></p>
+                <form action="/action_page.php">
+                  <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="more">More</option>
+                  </select>
+                </form>
+                <p><em>Duration</em></p>
+                <form action="/action_page.php">
+                  <select name="duration">
+                    <option value="1 week">1 week</option>
+                    <option value="2 weeks">2 Weeks</option>
+                    <option value="3 weeks">3 Weeks</option>
+                    <option value="4 weeks">4 Weeks</option>
+                    <option value="more">More</option>
+                  </select>
+                </form>
+              </td>
+              <td>
+                <form>
+                  Neck:
+                  <input type="text" name="neck"><br>
+                  Bust:
+                  <input type="text" name="bust"><br>
+                  Waist:
+                  <input type="text" name="waist"><br>
+                  Hips:
+                  <input type="text" name="hips"><br>
+                  Neck to Heel:
+                  <input type="text" name="Neck to Heel"><br>
+                  Neck to above knee:
+                  <input type="text" name="Neck to above knee"><br>
+                  Arm length:
+                  <input type="text" name="Arm length"><br>
+                  Shoulder to waist:
+                  <input type="text" name="shoulder to waist"><br>
+                  Waist to above knee:
+                  <input type="text" name="waist to above knee"><br>
+                  <input type="submit" value="Submit">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="./pics/sketch3.png" height="400" width="400"> <br>
+                <h3>Ksh.2500</h3>
+              </td>
+            </tr>
+          </table>
+        </p>
+      </div>
+
+      <section class="container">
+        <h1 class="big">Payment</h1>
+        <br>
+        <table style="width:90%">
+          <tr>
+            <th>Pesalink</th>
+            <th>Equity Bank</th>
+            <th>Paybill</th>
+          </tr>
+          <tr>
+            <td> Dial *208# enter your Mobile banking PIN.
+              Select Option 8, Pesalink.
+              Select Send Money.
+              Under send money you will have the option to send to Phone, Account or Card.
+              Select option, enter amount and submit.</td>
+            <td> Deposit to Our Account Number is 11000056789</td>
+            <td> Business Number -457688<br>
+              Account Name- Your Name and Location</td>
+          </tr>
+        </table>
+
+        <p>Payment Confirmation</p>
+        <br>
+        <div>
+          <label>Payment Code</label><br>
+          <input type="text" placeholder="Code">
+        </div>
+        <button type="submit class=" button_1>Submit</button>
+      </section>
+
+      <section class="container">
+        <h1>Order status for my Tailored Cloth</h1>
+        <img src="./pics/complete.jpeg" height="500" width="1000">
+        <p><em>Days remaining</em>: 0days</p>
+        <p><em>Tailor ID</em>: Tailor 001</p>
+        <P><em>Feedback</em>: Your Cloth is ready</P>
+      </section>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="tailor">
+        <img src="./pics/Tailor1.jpeg" height="100" width="100">
+        <p>Time remaining:0days</p>
+        <p>Contact of client:+254 701234567</p>
+        <p>Status of the tailor</p>
+        <form action="/action_page.php">
+          <select name="status of tailor">
+            <option value="Completed work">Completed work</option>
+            <option value="Available">Available</option>
+            <option value="Busy">Busy</option>
+            <option value="Almost">Almost</option>
+          </select>
+      </div>
+      <div class="tailor">
+        <img src="./pics/Tailor2.jpeg" height="100" width="100">
+        <p>Time remaining:8days</p>
+        <p>Contact of client:+254 702012345</p>
+        <p>Status of the tailor</p>
+        <form action="/action_page.php">
+          <select name="status of tailor">
+            <option value="Completed work">Completed work</option>
+            <option value="Available">Available</option>
+            <option value="Busy">Busy</option>
+            <option value="Almost">Almost</option>
+          </select>
+      </div>
+      <div class="tailor">
+        <img src="./pics/Tailor3.jpeg" height="100" width="100">
+        <p>Time remaining:2days</p>
+        <p>Contact of client:+254 703012345</p>
+        <p>Status of the tailor</p>
+        <form action="/action_page.php">
+          <select name="status of tailor">
+            <option value="Completed work">Completed work</option>
+            <option value="Available">Available</option>
+            <option value="Busy">Busy</option>
+            <option value="Almost">Almost</option>
+          </select>
+      </div>
+      <div class="tailor">
+        <img src="./pics/Tailor4.jpeg" height="100" width="100">
+        <p>Time remaining:4days</p>
+        <p>Contact of client:+254 725012345</p>
+        <p>Status of the tailor</p>
+        <form action="/action_page.php">
+          <select name="status of tailor">
+            <option value="Completed work">Completed work</option>
+            <option value="Available">Available</option>
+            <option value="Busy">Busy</option>
+            <option value="Almost">Almost</option>
+          </select>
+      </div>
+      <div class="tailor">
+        <img src="./pics/Tailor5.jpeg" height="100" width="100">
+        <p>Time remaining:2wks</p>
+        <p>Contact of client:+254 754023456</p>
+        <p>Status of the tailor</p>
+        <form action="/action_page.php">
+          <select name="status of tailor">
+            <option value="Completed work">Completed work</option>
+            <option value="Available">Available</option>
+            <option value="Busy">Busy</option>
+            <option value="Almost">Almost</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p> My Tailor, Copyright &copy; 2020.</p>
+  </footer>
+</body>
+
+</html>
